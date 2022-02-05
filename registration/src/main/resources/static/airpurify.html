@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+    <script  src="js/gsearch.js"></script>
+
+    <link rel="stylesheet"  href="css/styles.css">
+    <title>GreeneryMainPage</title>
+  </head>
+  <body>
+    <div>
+      <!-- header section -->
+<div>
+   <div class="container mt-2 navbar-header">
+    <div class="container-fluid ">
+        <div class="row d-inline-block">
+            <div class="row"><h3 style="color:green;text-align:left">Greenery.com</h3></div>
+        </div>
+    </div>
+  </div>  
+        
+     <div class="row">
+      <nav class="navbar navbar-expand-sm bg-success navbar-dark  pt-2">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+        <img src="images_project/logo3.jpg" height="50px" alt="LOGO" class="rounded-circle">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          
+        <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login">Login</a>
+          </li>
+        
+        </ul>
+          
+        </div>
+        
+       <div class="dropdown pe-5 me-5">
+          <button onclick="myFunction()" class="dropbtn">Search</button>
+          <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+            <a href="airpurify.html">Airpurify</a>
+            <a href="indoor.html">Aloevera</a>
+            <a href="smallspace.html">peperomia</a>
+            <a href="smallspace.html">pothos</a>
+            <a href="rareplants.html"> fittonia</a>
+            </div>
+            
+            <button class="btn-success" >  
+              <i class="fal fa-shopping-bag fa-2x" aria-hidden="true"></i><input type="button" id="cart1" style="border-radius:50%"></button> </div>
+     
+            </div>
+             </div> 
+       
+        </div>
+        </div>
+        </div>
+        </nav>
+        
+    </div>
+<br>
+<br>
+<br>
+<br>
+<h2 style="text-align: center;color:green">Air Purifying Plants</h2>
+
+<div class="container">
+<div class="row pt-5">
+  <div class="col-lg-6 m-xl-auto">
+    <div class="card border-success mb-3">
+      <div class="card-body">
+        <h5 class="card-title">Snake Plant</h5>
+        <p class="card-text pt-2">
+          <img src="images_project/airpurify/snake-plant.jpg" alt="Snake  plants"  width="300px" height="275px" class= "border border-success border-3" >	
+          <p><p  class="pt-3 justify-content-center" style="color:green">
+                         This Plant removes the toxic pollutants from air. A great oxygen producing plant and is also effective against allergies.
+            Allow soil to dry between waterings and take special care not to over water.Place the plant in indirect sunlight.
+         </p>
+         <h5>  $<span id="price">25.00</span></h5>
+         
+        <button class="btn btn-success"type="submit" onclick="itemAdded()">Add to Cart</a>
+         <button class="btn btn-danger"type="submit" onclick="itemDeleted()">Remove Cart</a>
+     </div>
+     </div>   
+    
+    </div>
+    </div>
+  <div class="container">
+  <div class="row pt-2">
+  <div class="col-lg-6 m-xl-auto pt-3">
+    <div class="card ">
+      <div class="card-body">
+        <h5 class="card-title">Spider Plant</h5>
+        <p class="card-text pt-2">
+          <img src="images_project/airpurify/spider-plant.jpg" alt="spider plant" class="img-fluid  border border-success border-3" width= "300px" height="310px">
+            
+            <p  class="pt-3 justify-content-center" style="color:green">
+                This Plant is good for air purification. One of the  easiest indoor plant to maintain.<br>Spider plant increases humidity in the room.               
+                It will tolerate lower light conditions. Water the plant when the top soil is 50% dry.
+            </p>
+            <h5> $<span id="price">12.99</span></h5>
+            <button class="btn btn-success"type="submit" onclick="itemAdded()">Add to Cart</a>
+          <button class="btn btn-danger"type="submit" onclick=="itemDeleted()">Remove Cart
+        </div>
+        </div>   
+       
+       </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+
+      </body>
+      </html>

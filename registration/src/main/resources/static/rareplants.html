@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+    <script  src="js/gsearch.js"></script>
+
+    <link rel="stylesheet"  href="css/styles.css">
+    <title>GreeneryMainPage</title>
+  </head>
+  <body>
+    <div>
+      <!-- header section -->
+<div>
+   <div class="container mt-2 navbar-header">
+    <div class="container-fluid ">
+        <div class="row d-inline-block">
+            <div class="row"><h3 style="color:green;text-align:left">Greenery.com</h3></div>
+        </div>
+    </div>
+  </div>  
+        
+     <div class="row">
+      <nav class="navbar navbar-expand-sm bg-success navbar-dark  pt-2">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+        <img src="images_project/logo3.jpg" height="50px" alt="LOGO" class="rounded-circle">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register.html">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        
+        </ul>
+          
+        </div>
+        
+        <div class="dropdown pe-5 me-5">
+          <button onclick="myFunction()" class="dropbtn">Search</button>
+          <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+            <a href="airpurify.html">Airpurify</a>
+            <a href="indoor.html">Aloevera</a>
+            <a href="smallspace.html">peperomia</a>
+            <a href="smallspace.html">pothos</a>
+            <a href="rareplants.html"> fittonia</a>
+            </div>
+            
+            <button class="btn-success" >  
+              <i class="fal fa-shopping-bag fa-2x" aria-hidden="true"></i><input type="button" id="cart1" style="border-radius:50%"></button> </div>
+            </div>
+             </div> 
+        </div>
+        </div>
+        </div>
+        </nav>
+        
+    </div>
+<br>
+<br>
+<br>
+<br>
+<h2 style="text-align: center;color:green">Rare Plants</h2>
+
+<div class="container">
+<div class="row pt-5">
+  <div class="col-lg-6 m-xl-auto">
+    <div class="card border-success mb-3">
+      <div class="card-body">
+        <h5 class="card-title"> Calathea Vittata</h5>
+        <p class="card-text pt-2">
+          <img src="images_project/rare/Calathea-Vittata.jpg" alt="Calathea-Vittata plant"  width="300px" height="275px" class= "border border-success border-3" >	
+          <p  class="pt-3 justify-content-center" style="color:green">
+            Calathea Vittata is a rare olant and  grows well in indirect sunlight .
+             Direct sunlight can make the plant dry quickly. 
+             Water the plant before the soil becomes dry.
+             The leaves are bright green color with numerous white stripes.
+             It is also a air-purifying plant which helps to reduce air pollutants in the home.
+
+         </p>
+         <h5>  $<span id="price">19.99</span></h5>
+         <button class="btn btn-success"type="submit" onclick="itemAdded()">Add to Cart</a>
+          <button class="btn btn-danger"type="submit" onclick=="itemDeleted()">Remove Cart</a> 
+     </div>
+     </div>   
+    
+    </div>
+    </div>
+  <div class="container">
+  <div class="row pt-2">
+  <div class="col-lg-6 m-xl-auto pt-3">
+    <div class="card ">
+      <div class="card-body">
+        <h5 class="card-title">Red Fittonia Plant</h5>
+        <p class="card-text pt-2">
+          <img src="images_project/rare/red&pink_fittonia.jpg" alt="RedFittonia plant" class="img-fluid  border border-success border-3" width= "300px" height="310px">
+            
+            <p  class="pt-3 justify-content-center" style="color:green">
+                This plant is called as Nerve plant because of the red color veins on the leaves. 
+                This plant is from South America and a wonderful tropical plant good  for tabletops,terrariums.
+                 These plant grows best in low to medium light. Avoid direct sunlight.
+
+            </p>
+            <h5> $<span id="price">22.99</span></h5>
+            <button class="btn btn-success"type="submit" onclick="itemAdded()">Add to Cart</a>
+          <button class="btn btn-danger"type="submit" onclick="itemDeleted()">Remove Cart</a>
+          </div>
+        </div>   
+       
+       </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+
+      </body>
+      </html>
